@@ -22,6 +22,9 @@ public class Controller {
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("customers",customerRepository.findAll());
+
+
+
         return"Customer";
     }
 }
